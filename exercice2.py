@@ -13,4 +13,6 @@ if __name__ == "__main__":
     master = input("Enter the master password: ")
     tag = input("Enter the tag: ")
     n = int(input("Enter the length of the generated password: "))
+    while n <= 0 or n > 12:
+        n = int(input("Please enter a valid length (1-12): "))
     print("Generated password:", mdp_hash(master, tag, n))
