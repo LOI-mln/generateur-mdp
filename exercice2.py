@@ -1,5 +1,4 @@
 import hashlib
-import base64
 
 def mdp_hash(master,tag,n): 
     combined = master + tag
@@ -10,6 +9,8 @@ def mdp_hash(master,tag,n):
 
 
 if __name__ == "__main__":
+
+    print("--- Exercice 2 ---")
     master = input("Enter the master password: ")
     tag = input("Enter the tag: ")
     is_correct = False
