@@ -90,8 +90,6 @@ if __name__ == "__main__":
         
         final_password = mdp_hash(master, tag, length)
         
-        print("--------------------------------------------------")
         print(f"Mot de passe généré : {final_password}")
-        print("--------------------------------------------------")
         
     print("Fin du programme.")
