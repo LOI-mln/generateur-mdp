@@ -32,7 +32,7 @@ def get_master_password():
 
     master_password = None
     
-    # on vérifie d'abord si le fichier existe
+    # on vérifie si le fichier existe
     file_exists = os.path.exists(MASTER_FILE)
 
     if file_exists:
@@ -76,7 +76,7 @@ def get_password_length():
 
 
 if __name__ == "__main__":
-    
+
     print("--- Exercice 3 ---")
     
     master = get_master_password()
